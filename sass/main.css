@@ -1,0 +1,85 @@
+*, ::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: grid;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: yellow;
+  height: 8vh;
+}
+nav button {
+  padding: 1rem;
+  background-color: black;
+  color: yellow;
+  border: none;
+  outline: black solid;
+  outline-offset: 0.2rem;
+}
+
+.header_center {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+}
+.header_center .outline_box {
+  width: 12rem;
+  height: 12rem;
+  outline: solid yellow;
+}
+.header_center .header_text {
+  text-align: center;
+}
+.header_center span {
+  display: block;
+}
+
+section {
+  height: 60vh;
+  background-color: yellow;
+}
+section .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 30vh;
+}
+section .section_title {
+  text-align: center;
+}
+
+.svg_skill {
+  width: 4rem;
+}
+
+main {
+  height: 80vh;
+}
+main .main_title {
+  text-align: center;
+}
+
+footer {
+  height: 60vh;
+  background-color: black;
+}/*# sourceMappingURL=main.css.map */

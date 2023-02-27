@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+    height: 8vh;
+    button {
+        padding: 1rem;
+        background-color: black;
+        color: yellow;
+        border: none;
+       outline: black solid;
+       outline-offset: 0.2rem;
+    }
+}
+.header_center {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    .outline_box {
+        width: 12rem;
+        height: 12rem;
+        outline: solid yellow;
+    }
+    .header_text {
+        text-align: center;
+    }
+    span {
+        display: block;
+    }
+}

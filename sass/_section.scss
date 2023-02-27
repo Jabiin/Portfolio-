@@ -1,0 +1,18 @@
+ section {
+    height: 60vh;
+    background-color: yellow;
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      height: 30vh;
+    }
+    .section_title {
+      text-align: center;
+    }
+ }
+
+ .svg_skill{
+   width: 4rem;
+ }
