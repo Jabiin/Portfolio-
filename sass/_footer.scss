@@ -1,4 +1,25 @@
+@mixin inputPadding {
+    padding: 1rem 0;
+}
 footer {
     height: 60vh;
+    padding: 2rem;
     background-color: black;
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        input {
+            
+        }
+       #name {
+        @include inputPadding
+       }
+       #mail {
+        @include inputPadding
+       }
+       .formbtn {
+        width: 5rem;
+        
+       }
+    }
 }
