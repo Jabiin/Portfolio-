@@ -18,6 +18,11 @@ h1 {
   font-size: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -41,13 +46,34 @@ nav button {
   align-items: center;
   height: 60vh;
 }
+@media only screen and (min-width: 900px) {
+  .header_center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
 .header_center .outline_box {
   width: 12rem;
   height: 12rem;
   outline: solid yellow;
 }
+@media only screen and (min-width: 900px) {
+  .header_center .outline_box {
+    width: 20rem;
+    height: 20rem;
+  }
+}
 .header_center .header_text {
   text-align: center;
+}
+@media only screen and (min-width: 900px) {
+  .header_center .header_text {
+    padding: 10rem;
+  }
+}
+.header_center .header_text p {
+  font-size: 2rem;
 }
 .header_center span {
   display: block;
@@ -64,6 +90,11 @@ section .gallery {
   align-items: center;
   height: 50vh;
 }
+@media only screen and (min-width: 900px) {
+  section .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 section .section_title {
   text-align: center;
   padding-top: 3rem;
@@ -74,7 +105,7 @@ section .section_title {
 }
 
 main {
-  height: 170vh;
+  height: 250vh;
 }
 main .main_title {
   text-align: center;
@@ -90,6 +121,16 @@ main .main_title {
   row-gap: 5rem;
   justify-items: center;
   align-items: center;
+}
+@media only screen and (min-width: 900px) {
+  .gall {
+    height: 200vh;
+    grid-template-columns: 50rem 50rem;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
 }
 
 .img__box-one {
@@ -114,7 +155,7 @@ main .main_title {
   opacity: 0;
 }
 .img__box-body button {
-  background-image: linear-gradient(90deg, red, blue);
+  background-image: linear-gradient(90deg, yellow, yellow);
   border: hidden;
   padding: 0.6rem 2.4rem;
   cursor: pointer;
@@ -146,7 +187,7 @@ main .main_title {
   width: 100%;
 }
 .img__box-two .img__box-body button {
-  background-image: linear-gradient(90deg, red, blue);
+  background-image: linear-gradient(90deg, yellow, yellow);
   border: hidden;
   padding: 0.6rem 2.4rem;
   cursor: pointer;
@@ -170,7 +211,7 @@ main .main_title {
   width: 100%;
 }
 .img__box-three .img__box-body button {
-  background-image: linear-gradient(90deg, red, blue);
+  background-image: linear-gradient(90deg, yellow, yellow);
   border: hidden;
   padding: 0.6rem 2.4rem;
   cursor: pointer;
@@ -194,27 +235,24 @@ main .main_title {
   width: 100%;
 }
 .img__box-four .img__box-body button {
-  background-image: linear-gradient(90deg, red, blue);
+  background-image: linear-gradient(90deg, yellow, yellow);
   border: hidden;
   padding: 0.6rem 2.4rem;
   cursor: pointer;
 }
 
 footer {
-  height: 60vh;
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  height: 10vh;
   padding: 2rem;
   background-color: black;
 }
-footer form {
-  display: grid;
-  grid-template-columns: 1fr;
+footer .footer_h1 {
+  color: aliceblue;
 }
-footer form #name {
-  padding: 1rem 0;
-}
-footer form #mail {
-  padding: 1rem 0;
-}
-footer form .formbtn {
-  width: 5rem;
+footer .footer_svg {
+  height: 4rem;
+  width: 3rem;
+  grid-row: 2/2;
 }/*# sourceMappingURL=main.css.map */

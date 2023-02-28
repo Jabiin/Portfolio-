@@ -1,25 +1,19 @@
-@mixin inputPadding {
-    padding: 1rem 0;
-}
+
 footer {
-    height: 60vh;
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+
+    
+    height: 10vh;
     padding: 2rem;
     background-color: black;
-    form {
-        display: grid;
-        grid-template-columns: 1fr;
-        input {
-            
-        }
-       #name {
-        @include inputPadding
-       }
-       #mail {
-        @include inputPadding
-       }
-       .formbtn {
-        width: 5rem;
-        
-       }
+    .footer_h1 {
+        color: aliceblue;
     }
+   .footer_svg {
+    height: 4rem;
+    width: 3rem;
+    grid-row: 2 / 2;
+   }
+    
 }
