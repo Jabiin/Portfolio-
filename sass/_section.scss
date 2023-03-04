@@ -9,6 +9,7 @@
       height: 50vh;
       @media only screen and (min-width: $bp-desktop){ 
         grid-template-columns: repeat(6, 1fr);
+        height: 40vh;
       }
     }
     .section_title {

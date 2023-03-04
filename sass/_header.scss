@@ -12,6 +12,7 @@ nav {
         color: yellow;
         border: none;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 1rem;
         cursor: pointer;
         
     }
@@ -35,13 +36,14 @@ nav {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        border-radius: 1rem;
         @media only screen and (min-width: $bp-desktop) {
             width: 20rem;
             height: 17rem;
         }
     }
     .header_text {
-        text-align: center;
+        text-align: left;
         @media only screen and (min-width: $bp-desktop){ 
             padding: 10rem;
         }
