@@ -2,22 +2,27 @@
 
 @mixin bg-img {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+   border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 @mixin text{
-    font-size: 3rem;
+    font-size: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100%;
         width: 100%;
+        color: $secondary-color;
         
 }
 
 @mixin btn{
-       background-image: linear-gradient(90deg, yellow, yellow);
+       background-color: $primary-color;
         border: hidden;
         padding: 0.6rem 2.4rem;
         
@@ -26,6 +31,7 @@
  
 @mixin hover{
     transform: translateY(-0.5rem);
+    
 }
   
  main {
@@ -34,6 +40,10 @@
         text-align: center;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        @media only screen and (min-width: $bp-desktop){
+            font-size: 4rem;
+            padding-top: 10rem;
+        }
     }
 }  
 
@@ -56,17 +66,19 @@
   
 }
 .img__box-one{
-    background-image: url(https://images.unsplash.com/photo-1670854753247-2df22e4a4a84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(/icons/images/projectd.png);
     @include bg-img;
     height: 30rem;
     width: 35rem;
     transition: all 0.2s;
+    
 }
 
 
  .img__box-body{
         background-color: rgba(0, 0, 0, 0.521);
         transition: opacity 0.50s;
+        border-radius: 1rem;
         @include text;
         opacity: 0;
 
@@ -86,7 +98,7 @@
 
 
 .img__box-two{
-    background-image:url(https://images.unsplash.com/photo-1670791778485-093d87b64b51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60) ;
+    background-image:url(/icons/images/projecta.png);
     @include bg-img;
     height: 30rem;
     width: 35rem;
@@ -102,7 +114,7 @@
     }
 }
 .img__box-three{
-    background-image: url(https://images.unsplash.com/photo-1670443147669-152c8f0fe2f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(/icons/images/projectb.png);
     @include bg-img;
     height: 30rem;
     width: 35rem;
@@ -118,7 +130,7 @@
     }
 }
 .img__box-four{
-    background-image: url(https://images.unsplash.com/photo-1669923804724-15237f5a4a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(/icons/images/projectc.png);
     @include bg-img;
     height: 30rem;
     width: 35rem;

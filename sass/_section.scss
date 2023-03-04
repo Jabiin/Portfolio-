@@ -1,6 +1,6 @@
  section {
     height: 60vh;
-    background-color: yellow;
+    background-color: $primary-color;
     .gallery {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -14,9 +14,13 @@
     .section_title {
       text-align: center;
       padding-top: 3rem;
+      color: $secondary-color;
+      @media only screen and (min-width: $bp-desktop){
+        font-size: 4rem;
+      }
     }
  }
 
  .svg_skill{
-   width: 4rem;
+   width: 6rem;
  }

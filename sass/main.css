@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
 *, ::before,
 ::after {
   margin: 0;
@@ -8,6 +9,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .wrapper {
@@ -27,16 +33,16 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: yellow;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   height: 8vh;
 }
-nav button {
+nav .header_btn {
   padding: 1rem;
-  background-color: black;
+  background-color: #003A6E;
   color: yellow;
   border: none;
-  outline: black solid;
-  outline-offset: 0.2rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  cursor: pointer;
 }
 
 .header_center {
@@ -55,13 +61,17 @@ nav button {
 }
 .header_center .outline_box {
   width: 12rem;
-  height: 12rem;
-  outline: solid yellow;
+  height: 10rem;
+  outline: solid #003A6E;
+  background-image: url(/icons/images/main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 @media only screen and (min-width: 900px) {
   .header_center .outline_box {
     width: 20rem;
-    height: 20rem;
+    height: 17rem;
   }
 }
 .header_center .header_text {
@@ -78,10 +88,14 @@ nav button {
 .header_center span {
   display: block;
 }
+.header_center strong {
+  color: #003A6E;
+  text-transform: capitalize;
+}
 
 section {
   height: 60vh;
-  background-color: yellow;
+  background-color: #003A6E;
 }
 section .gallery {
   display: grid;
@@ -98,10 +112,16 @@ section .gallery {
 section .section_title {
   text-align: center;
   padding-top: 3rem;
+  color: white;
+}
+@media only screen and (min-width: 900px) {
+  section .section_title {
+    font-size: 4rem;
+  }
 }
 
 .svg_skill {
-  width: 4rem;
+  width: 6rem;
 }
 
 main {
@@ -111,6 +131,12 @@ main .main_title {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+@media only screen and (min-width: 900px) {
+  main .main_title {
+    font-size: 4rem;
+    padding-top: 10rem;
+  }
 }
 
 .gall {
@@ -134,9 +160,13 @@ main .main_title {
 }
 
 .img__box-one {
-  background-image: url(https://images.unsplash.com/photo-1670854753247-2df22e4a4a84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-image: url(/icons/images/projectd.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   height: 30rem;
   width: 35rem;
   transition: all 0.2s;
@@ -145,17 +175,19 @@ main .main_title {
 .img__box-body {
   background-color: rgba(0, 0, 0, 0.521);
   transition: opacity 0.5s;
-  font-size: 3rem;
+  border-radius: 1rem;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  color: white;
   opacity: 0;
 }
 .img__box-body button {
-  background-image: linear-gradient(90deg, yellow, yellow);
+  background-color: #003A6E;
   border: hidden;
   padding: 0.6rem 2.4rem;
   cursor: pointer;
@@ -170,72 +202,87 @@ main .main_title {
 }
 
 .img__box-two {
-  background-image: url(https://images.unsplash.com/photo-1670791778485-093d87b64b51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-image: url(/icons/images/projecta.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   height: 30rem;
   width: 35rem;
   transition: all 0.2s;
 }
 .img__box-two .img__box-body {
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  color: white;
 }
 .img__box-two .img__box-body button {
-  background-image: linear-gradient(90deg, yellow, yellow);
+  background-color: #003A6E;
   border: hidden;
   padding: 0.6rem 2.4rem;
   cursor: pointer;
 }
 
 .img__box-three {
-  background-image: url(https://images.unsplash.com/photo-1670443147669-152c8f0fe2f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-image: url(/icons/images/projectb.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   height: 30rem;
   width: 35rem;
   transition: all 0.2s;
 }
 .img__box-three .img__box-body {
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  color: white;
 }
 .img__box-three .img__box-body button {
-  background-image: linear-gradient(90deg, yellow, yellow);
+  background-color: #003A6E;
   border: hidden;
   padding: 0.6rem 2.4rem;
   cursor: pointer;
 }
 
 .img__box-four {
-  background-image: url(https://images.unsplash.com/photo-1669923804724-15237f5a4a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-image: url(/icons/images/projectc.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   height: 30rem;
   width: 35rem;
   transition: all 0.2s;
 }
 .img__box-four .img__box-body {
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  color: white;
 }
 .img__box-four .img__box-body button {
-  background-image: linear-gradient(90deg, yellow, yellow);
+  background-color: #003A6E;
   border: hidden;
   padding: 0.6rem 2.4rem;
   cursor: pointer;
@@ -250,6 +297,7 @@ footer {
 }
 footer .footer_h1 {
   color: aliceblue;
+  font-size: 1rem;
 }
 footer .footer_svg {
   height: 4rem;

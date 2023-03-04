@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 
 *,::before,
 ::after{
@@ -11,9 +11,12 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem is equal to 10px 
     scroll-behavior: smooth;
-    
+    font-family: 'Poppins', sans-serif;
 }
-
+body::-webkit-scrollbar {
+        display: none;
+}
 .wrapper {
     display: grid;
+    
 }
