@@ -43,9 +43,10 @@ nav {
         }
     }
     .header_text {
-        text-align: left;
+        text-align: center;
         @media only screen and (min-width: $bp-desktop){ 
             padding: 10rem;
+            text-align: left;
         }
         p {
             font-size: 2rem;

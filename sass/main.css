@@ -77,11 +77,12 @@ nav .header_btn {
   }
 }
 .header_center .header_text {
-  text-align: left;
+  text-align: center;
 }
 @media only screen and (min-width: 900px) {
   .header_center .header_text {
     padding: 10rem;
+    text-align: left;
   }
 }
 .header_center .header_text p {
